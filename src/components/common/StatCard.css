@@ -1,0 +1,78 @@
+.stat-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-color: #cbd5e1;
+}
+
+.stat-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.stat-card__title {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.stat-card__value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-top: 0.375rem;
+  line-height: 1.25;
+}
+
+.stat-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.5rem;
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+.stat-card--indigo .stat-card__icon { background-color: #e0e7ff; color: #4338ca; }
+.stat-card--emerald .stat-card__icon { background-color: #d1fae5; color: #047857; }
+.stat-card--amber .stat-card__icon { background-color: #fef3c7; color: #b45309; }
+.stat-card--blue .stat-card__icon { background-color: #dbeafe; color: #1d4ed8; }
+.stat-card--purple .stat-card__icon { background-color: #f3e8ff; color: #7e22ce; }
+.stat-card--rose .stat-card__icon { background-color: #ffe4e6; color: #be123c; }
+
+.stat-card__footer {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+}
+
+.stat-card__trend {
+  font-weight: 600;
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.375rem;
+}
+
+.stat-card__trend--up { background-color: #f0fdf4; color: #16a34a; }
+.stat-card__trend--down { background-color: #fef2f2; color: #dc2626; }
+.stat-card__trend--neutral { background-color: #f8fafc; color: #64748b; }
+
+.stat-card__subtitle {
+  color: #64748b;
+}

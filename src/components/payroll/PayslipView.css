@@ -1,0 +1,234 @@
+.payslip-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.payslip-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 0.875rem 1.25rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.payslip-status-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.payslip-action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.payslip-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.4375rem 0.875rem;
+  border-radius: 0.375rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+  border: 1px solid transparent;
+}
+
+.payslip-btn--email {
+  background-color: #f1f5f9;
+  color: #334155;
+  border-color: #cbd5e1;
+}
+.payslip-btn--email:hover { background-color: #e2e8f0; }
+
+.payslip-btn--print {
+  background-color: #ffffff;
+  color: #4f46e5;
+  border-color: #c7d2fe;
+}
+.payslip-btn--print:hover { background-color: #e0e7ff; }
+
+.payslip-btn--download {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+.payslip-btn--download:hover { background-color: #4338ca; }
+
+/* Document Style */
+.payslip-document {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  border: 1px solid #cbd5e1;
+  padding: 2.25rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  color: #0f172a;
+  font-family: inherit;
+}
+
+.payslip-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 1.25rem;
+  border-bottom: 2px solid #0f172a;
+  margin-bottom: 1.25rem;
+}
+
+.payslip-company-branding {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.payslip-company-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  background-color: #e0e7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.payslip-company-name {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.payslip-company-address {
+  font-size: 0.8125rem;
+  color: #475569;
+  margin-top: 0.125rem;
+}
+
+.payslip-company-contact {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.payslip-title-badge {
+  text-align: right;
+}
+
+.payslip-title-badge h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #4f46e5;
+  letter-spacing: 0.025em;
+}
+
+.payslip-code {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.payslip-employee-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem 2rem;
+  background-color: #f8fafc;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 1.5rem;
+  font-size: 0.8125rem;
+}
+
+.payslip-detail-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payslip-detail-label { color: #64748b; }
+.payslip-detail-val { color: #0f172a; }
+
+.payslip-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.8125rem;
+}
+
+.payslip-th {
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 0.625rem 0.875rem;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.payslip-th--amount { text-align: right; }
+
+.payslip-td {
+  padding: 0.625rem 0.875rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #334155;
+}
+
+.payslip-td--amount {
+  text-align: right;
+  font-weight: 600;
+}
+
+.payslip-total-row .payslip-td {
+  background-color: #f8fafc;
+  border-top: 2px solid #0f172a;
+  border-bottom: 2px solid #0f172a;
+}
+
+.payslip-net-box {
+  background-color: #f0fdf4;
+  border: 1.5px solid #86efac;
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.payslip-net-title {
+  font-weight: 800;
+  font-size: 0.875rem;
+  color: #166534;
+}
+
+.payslip-net-text {
+  font-size: 0.75rem;
+  color: #15803d;
+  display: block;
+}
+
+.payslip-net-val {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #15803d;
+}
+
+.payslip-footer-signatures {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.payslip-sig-text { font-size: 0.75rem; color: #64748b; font-style: italic; }
+.payslip-sig-sub { font-size: 0.6875rem; color: #94a3b8; }
+
+.payslip-sig-auth { text-align: center; width: 12rem; }
+.payslip-sig-line { border-bottom: 1px solid #94a3b8; margin-bottom: 0.375rem; }
+.payslip-sig-auth-title { font-size: 0.8125rem; font-weight: 700; color: #0f172a; }
+.payslip-sig-auth-sub { font-size: 0.6875rem; color: #64748b; }

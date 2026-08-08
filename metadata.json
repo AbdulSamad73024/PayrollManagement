@@ -1,0 +1,6 @@
+{
+  "name": "Payroll Management System",
+  "description": "Enterprise-grade Payroll Management System with Employee Management, Attendance, Leaves, Salary Structures, Payroll Processing, Payslips, and Reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

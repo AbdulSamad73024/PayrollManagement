@@ -1,0 +1,124 @@
+.salary-breakdown-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.salary-breakdown-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .salary-breakdown-grid { grid-template-columns: 1fr; }
+}
+
+.salary-column {
+  padding: 1.25rem;
+}
+
+.salary-column--earnings {
+  border-right: 1px solid #e2e8f0;
+  background-color: #fafafa;
+}
+
+.salary-column--deductions {
+  background-color: #ffffff;
+}
+
+.salary-column-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 1rem;
+}
+
+.salary-column-header h4 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.salary-badge {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+}
+
+.salary-badge--green { background-color: #dcfce7; color: #15803d; }
+.salary-badge--red { background-color: #fee2e2; color: #b91c1c; }
+
+.salary-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin-bottom: 1.25rem;
+}
+
+.salary-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8125rem;
+}
+
+.salary-item-label {
+  color: #475569;
+}
+
+.salary-item-value {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.salary-total-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  border-top: 2px dashed #cbd5e1;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.salary-total-row--gross { color: #15803d; }
+.salary-total-row--deductions { color: #b91c1c; }
+
+.salary-net-banner {
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+  color: #ffffff;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.salary-net-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.salary-net-label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #e0e7ff;
+}
+
+.salary-net-formula {
+  font-size: 0.75rem;
+  color: #a5b4fc;
+}
+
+.salary-net-amount {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #ffffff;
+}
