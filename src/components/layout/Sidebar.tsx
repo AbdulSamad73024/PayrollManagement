@@ -55,8 +55,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onLogout }) => {
           to="/dashboard"
           className={({ isActive }) => `sidebar-link ${isActive ? 'sidebar-link--active' : ''}`}
         >
-          <LayoutDashboard size={18} />
-          <span>Dashboard</span>
+          <div className="flex items-center gap-2.5">
+            <LayoutDashboard size={18} />
+            <span>Dashboard</span>
+          </div>
         </NavLink>
 
         {/* Employee Management Accordion */}
@@ -152,8 +154,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onLogout }) => {
           to="/salary/structure"
           className={({ isActive }) => `sidebar-link ${isActive ? 'sidebar-link--active' : ''}`}
         >
-          <DollarSign size={18} />
-          <span>Salary Structure</span>
+          <div className="flex items-center gap-2.5">
+            <DollarSign size={18} />
+            <span>Salary Structure</span>
+          </div>
         </NavLink>
 
         {/* Payroll Accordion */}
@@ -193,8 +197,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onLogout }) => {
           to="/reports"
           className={({ isActive }) => `sidebar-link ${isActive ? 'sidebar-link--active' : ''}`}
         >
-          <BarChart3 size={18} />
-          <span>Reports & Analytics</span>
+          <div className="flex items-center gap-2.5">
+            <BarChart3 size={18} />
+            <span>Reports & Analytics</span>
+          </div>
         </NavLink>
 
         {/* Settings */}
@@ -202,8 +208,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onLogout }) => {
           to="/settings"
           className={({ isActive }) => `sidebar-link ${isActive ? 'sidebar-link--active' : ''}`}
         >
-          <Settings size={18} />
-          <span>System Settings</span>
+          <div className="flex items-center gap-2.5">
+            <Settings size={18} />
+            <span>System Settings</span>
+          </div>
         </NavLink>
       </nav>
 
